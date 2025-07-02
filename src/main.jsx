@@ -13,12 +13,15 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,  //라우팅 정보가 잘못됐을 때 자동적으로 이 element가 동작함
+    children: [
+      {
+        path: "contacts/:contactId",
+        element: <Contact />,
+      }
+
+    ]
   },
-  {
-    path:"contacts/:contactId",
-    element:<Contact />,
-  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
