@@ -239,7 +239,7 @@ i {
 }
 
 #detail {
-  flex: 1;
+  flex: 0;
   padding: 2rem 4rem;
   width: 100%;
 }
@@ -253,6 +253,7 @@ i {
 #contact {
   max-width: 40rem;
   display: flex;
+  padding-top:30px;
 }
 
 #contact h1 {
@@ -305,6 +306,7 @@ i {
   max-width: 40rem;
   flex-direction: column;
   gap: 1rem;
+  padding-top : 30px;
 }
 #contact-form > p:first-child {
   margin: 0;
